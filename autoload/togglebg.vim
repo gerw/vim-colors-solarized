@@ -27,9 +27,9 @@ noremap <SID>TogBG  :call <SID>TogBG()<CR>
 
 function! s:TogBG()
     let &background = ( &background == "dark"? "light" : "dark" )
-    if exists("g:colors_name")
-        exe "colorscheme " . g:colors_name
-    endif
+    " if exists("g:colors_name")
+    "     exe "colorscheme " . g:colors_name
+    " endif
 endfunction
 
 if !exists(":ToggleBG")
