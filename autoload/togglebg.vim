@@ -13,7 +13,7 @@ let g:loaded_togglebg = 1
 " this case <SID>TogBG. The <script> argument modifies the noremap scope in 
 " this regard (and the noremenu below).
 nnoremap <unique> <script> <Plug>ToggleBackground <SID>TogBG
-inoremap <unique> <script> <Plug>ToggleBackground <ESC><SID>TogBG<ESC>a
+inoremap <unique> <script> <Plug>ToggleBackground <C-\><C-O><SID>TogBG
 vnoremap <unique> <script> <Plug>ToggleBackground <ESC><SID>TogBG<ESC>gv
 nnoremenu <script> Window.Toggle\ Background <SID>TogBG
 inoremenu <script> Window.Toggle\ Background <ESC><SID>TogBG<ESC>a
