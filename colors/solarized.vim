@@ -586,7 +586,7 @@ exe "hi! Special"        .s:fmt_none   .s:fg_red    .s:bg_none
 exe "hi! Underlined"     .s:fmt_none   .s:fg_violet .s:bg_none
 "       *Underlined      text that stands out, HTML links
 
-exe "hi! Ignore"         .s:fmt_none   .s:fg_none   .s:bg_none
+exe "hi! Ignore"         .s:fmt_none   .s:fg_back   .s:bg_none
 "       *Ignore          left blank, hidden  |hl-Ignore|
 
 exe "hi! Error"          .s:fmt_bold   .s:fg_red    .s:bg_none
