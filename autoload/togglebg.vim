@@ -32,9 +32,9 @@ endfunction
 
 function! togglebg#map(mapActivation)
     try
-        exe "silent! nmap <unique> ".a:mapActivation." <Plug>ToggleBackground"
-        exe "silent! imap <unique> ".a:mapActivation." <Plug>ToggleBackground"
-        exe "silent! vmap <unique> ".a:mapActivation." <Plug>ToggleBackground"
+        exe "silent! nmap <silent> <unique> ".a:mapActivation." <Plug>ToggleBackground"
+        exe "silent! imap <silent> <unique> ".a:mapActivation." <Plug>ToggleBackground"
+        exe "silent! vmap <silent> <unique> ".a:mapActivation." <Plug>ToggleBackground"
     finally
         return 0
     endtry
